@@ -20,7 +20,7 @@
 			
 		</div>
 		<div class="contenido" data-role="content">
-			<h4 style="text-align: center;">Hora actual: <span id="hora">&mdash;</span></h4>
+			<h4 align="center">Hora actual: <span id="hora">&mdash;</span></h4>
 			<ul data-role="listview">
 				<li>
 					<h3>Sala 1</h3>
@@ -266,15 +266,27 @@
 				
 				hour = hour <= 9 ? '0'+ hour : hour;
 				min = min <= 9 ? '0'+ min : min;
-				delta = 60000 - ( sec * 1000);
+				delta = 60 - sec;
 				
-				hora = hour+':'+min;
-				$("#hora").text(hora);
+				hora = hour+'<span id="dp">:</span>'+min;
+				$("#hora").html(hora);
 				
-				setTimeout("updateClock()", delta);
+				setTimeout("updateClock()", delta * 1000);
+			}
+			
+			var isSeen = true;
+			function pseudoBlink(){
+				var txt = window.isSeen ? 'visible' : 'hidden';
+				console.error(window.isSeen);
+				
+				$("#dp").css({'visibility' : txt});
+				
+				window.isSeen = window.isSeen ? false : true;
+				setTimeout("pseudoBlink()", 800);
 			}
 			$(document).ready(function(){
 				updateClock();
+				pseudoBlink();
 			});
 		</script>
 	</div>
