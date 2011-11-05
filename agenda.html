@@ -1,0 +1,282 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Startechconf / No oficial!</title> 
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+    
+</head> 
+
+<body>
+	<!-- agenda -->
+	<div id="agenda-home" data-role="page" data-theme="a">
+		<div data-role="header">
+			<a href="index.html" data-icon="back">Atrás</a>
+			<h2>Agenda</h2>
+			
+		</div>
+		<div class="contenido" data-role="content">
+			<h4 style="text-align: center;">Hora actual: <span id="hora">&mdash;</span></h4>
+			<ul data-role="listview">
+				<li>
+					<h3>Sala 1</h3>
+					<ul>
+						<a href="agenda.html" data-role="button" data-rel="back" data-icon="back">Atrás</a>
+						<li data-role="list-divider">9:00 - 10:00</li>
+						<li><a href="charlas.html#p1">
+							<h2>Developing HTML5 For a Cross Browser World</h2>
+							<p>Paul Irish</p>
+							</a>
+						</li>
+						<li data-role="list-divider">10:00 - 11:00</li>
+						<li><a href="charlas.html#p2">
+							<h2>relational vs !relational</h2>
+							<p>Mark Ramm</p>
+							</a>
+						</li>
+						<li data-role="list-divider">11:00 - 11:30</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Coffee Break</h2>
+						</li>
+						<li data-role="list-divider">11:30 - 12:40</li>
+						<li><a href="charlas.html#s1-1">
+							<h2>Using jQuery Mobile</h2>
+							<p>Mike Hostetler</p>
+							</a>
+						</li>
+						<li data-role="list-divider">12:50 - 13:20</li>
+						<li><a href="charlas.html#s1-2">
+							<h2>Monkey, HTTP server everywhere</h2>
+							<p>Eduardo Silva</p>
+							</a>
+						</li>
+						<li data-role="list-divider">13:20 - 15:00</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Almuerzo</h2>
+						</li>
+						<li data-role="list-divider">15:00 - 15:30</li>
+						<li><a href="charlas.html#s1-3">
+							<h2>Web Scraping for Development of Mobile and Web interfaces</h2>
+							<p>Alvaro Aguirre</p>
+							</a>
+						</li>
+						<li data-role="list-divider">15:40 - 16:10</li>
+						<li><a href="http://www.bluevia.com" rel="external">
+							<h2>Movistar Innova y plataforma Bluevia</h2>
+							</a>
+						</li>
+						<li data-role="list-divider">16:20 - 16:50</li>
+						<li><a href="charlas.html#s1-5">
+							<h2>Desarrollo móvil multiplataforma: ¿Por dónde empezar?</h2>
+							<p>Abraham Barrera</p>
+							</a>
+						</li>
+						<li data-role="list-divider">16:50 - 17:15</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Coffee Break</h2>
+						</li>
+						<li data-role="list-divider">17:15 - 18:150</li>
+						<li><a href="charlas.html#p3">
+							<h2>Move it! CSS3 Transitions and Animations</h2>
+							<p>Greg Rewis</p>
+							</a>
+						</li>
+						<li data-role="list-divider">17:15 - 18:15</li>
+						<li><a href="charlas.html#p4">
+							<h2>Optimizing for Happiness</h2>
+							<p>Tom Preston-Werner</p>
+							</a>
+						</li>
+						<li data-role="list-divider">16:50 - 17:15</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Cierre</h2>
+						</li>
+						<a href="agenda.html" data-role="button" data-rel="back" data-icon="back">Atrás</a>
+					</ul>
+				</li>
+				<li><h3>Sala 2</h3>
+					<ul>
+						<a href="agenda.html" data-role="button" data-rel="back" data-icon="back">Atrás</a>
+						<li data-role="list-divider">9:00 - 10:00</li>
+						<li><a href="charlas.html#p1">
+							<h2>Developing HTML5 For a Cross Browser World</h2>
+							<p>Paul Irish</p>
+							</a>
+						</li>
+						<li data-role="list-divider">10:00 - 11:00</li>
+						<li><a href="charlas.html#p2">
+							<h2>relational vs !relational</h2>
+							<p>Mark Ramm</p>
+							</a>
+						</li>
+						<li data-role="list-divider">11:00 - 11:30</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Coffee Break</h2>
+						</li>
+						<li data-role="list-divider">11:30 - 12:00</li>
+						<li><a href="charlas.html#s2-1">
+							<h2>PostSQL - PostgreSQL with all good features of NoSQL</h2>
+							<p>Hannu Krosing</p>
+							</a>
+						</li>
+						<li data-role="list-divider">12:10 - 12:40</li>
+						<li><a href="charlas.html#s2-2">
+							<h2>A Tale of Three Trees</h2>
+							<p>Scott Chacon</p>
+							</a>
+						</li>
+						<li data-role="list-divider">12:50 - 13:20</li>
+						<li><a href="charlas.html#s2-3">
+							<h2>Post mortem: 24h, 72 DDoS</h2>
+							<p>Tomás Pollak / Carlos Yaconi</p>
+							</a>
+						</li>
+						<li data-role="list-divider">13:20 - 15:00</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Almuerzo</h2>
+						</li>
+						<li data-role="list-divider">15:00 - 15:30</li>
+						<li><a href="charlas.html#s2-4">
+							<h2>Performance analysis of Rails 3 applications</h2>
+							<p>Gonçalo Silva</p>
+							</a>
+						</li>
+						<li data-role="list-divider">15:40 - 16:10</li>
+						<li><a href="charlas.html#s2-5">
+							<h2>JRuby: Ruby en un mundo enterprise</h2>
+							<p>Jano Gonzalez</p>
+							</a>
+						</li>
+						<li data-role="list-divider">16:20 - 16:50</li>
+						<li><a href="charlas.html#s2-6">
+							<h2>Shaven - Templating without mustaches</h2>
+							<p>Chris Kowalik</p>
+							</a>
+						</li>
+						<li data-role="list-divider">16:50 - 17:15</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Coffee Break</h2>
+						</li>
+						<li data-role="list-divider">17:15 - 18:150</li>
+						<li><a href="charlas.html#p3">
+							<h2>Move it! CSS3 Transitions and Animations</h2>
+							<p>Greg Rewis</p>
+							</a>
+						</li>
+						<li data-role="list-divider">17:15 - 18:15</li>
+						<li><a href="charlas.html#p4">
+							<h2>Optimizing for Happiness</h2>
+							<p>Tom Preston-Werner</p>
+							</a>
+						</li>
+						<li data-role="list-divider">16:50 - 17:15</li>
+						<li data-theme="c">
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Cierre</h2>
+						</li>
+						<a href="agenda.html" data-role="button" data-rel="back" data-icon="back">Atrás</a>
+					</ul>
+				</li>
+				<li><h3>Sala 3</h3>
+					<ul>
+						<a href="agenda.html" data-role="button" data-rel="back" data-icon="back">Atrás</a>
+						<li data-role="list-divider">9:00 - 10:00</li>
+						<li><a href="charlas.html#p1">
+							<h2>Developing HTML5 For a Cross Browser World</h2>
+							<p>Paul Irish</p>
+							</a>
+						</li>
+						<li data-role="list-divider">10:00 - 11:00</li>
+						<li><a href="charlas.html#p2">
+							<h2>relational vs !relational</h2>
+							<p>Mark Ramm</p>
+							</a>
+						</li>
+						<li data-role="list-divider">11:00 - 11:30</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Coffee Break</h2>
+						</li>
+						<li data-role="list-divider">11:30 - 12:00</li>
+						<li><a href="charlas.html#s3-1">
+							<h2>Administración ágil de sistemas en el entorno de una Startup</h2>
+							<p>Fernando Blat</p>
+							</a>
+						</li>
+						<li data-role="list-divider">12:10 - 12:40</li>
+						<li><a href="charlas.html#s3-2">
+							<h2>To Test or Not To Test</h2>
+							<p>Obie Fernandez</p>
+							</a>
+						</li>
+						<li data-role="list-divider">13:20 - 15:00</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Almuerzo</h2>
+						</li>
+						<li data-role="list-divider">15:00 - 15:30</li>
+						<li><a href="charlas.html#s2-4">
+							<h2>Programación paralela en plataforma Java es fácil con Groovy y Grails</h2>
+							<p>Daniel Arsenovski</p>
+							</a>
+						</li>
+						<li data-role="list-divider">15:40 - 16:10</li>
+						<li><a href="charlas.html#s2-5">
+							<h2>Conquering the Server Side with Node.JS</h2>
+							<p>Caridy Patiño</p>
+							</a>
+						</li>
+						<li data-role="list-divider">16:50 - 17:15</li>
+						<li>
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Coffee Break</h2>
+						</li>
+						<li data-role="list-divider">17:15 - 18:150</li>
+						<li><a href="charlas.html#p3">
+							<h2>Move it! CSS3 Transitions and Animations</h2>
+							<p>Greg Rewis</p>
+							</a>
+						</li>
+						<li data-role="list-divider">17:15 - 18:15</li>
+						<li><a href="charlas.html#p4">
+							<h2>Optimizing for Happiness</h2>
+							<p>Tom Preston-Werner</p>
+							</a>
+						</li>
+						<li data-role="list-divider">16:50 - 17:15</li>
+						<li data-theme="c">
+							<h2 style="font-size: 1.5em; font-variant: small-caps;">Cierre</h2>
+						</li>
+						<a href="agenda.html" data-role="button" data-rel="back" data-icon="back">Atrás</a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="foot" data-role="footer" data-theme="a">
+			<h4><a href="http://www.pslabs.cl">PS Labs</a></h4>
+		</div>
+	</div>
+	<div id="scripts">
+		<script type="text/javascript">
+			function updateClock(){
+				var now = new Date();
+				var hour = now.getHours();
+				var min = now.getMinutes();
+				var sec = now.getSeconds();
+				
+				hour = hour <= 9 ? '0'+ hour : hour;
+				min = min <= 9 ? '0'+ min : min;
+				delta = 60000 - ( sec * 1000);
+				
+				hora = hour+':'+min;
+				$("#hora").text(hora);
+				
+				setTimeout("updateClock()", delta);
+			}
+			$(document).ready(function(){
+				updateClock();
+			});
+		</script>
+	</div>
+</body>
+</html>
